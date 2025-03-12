@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swrap');
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+
+   font-family: 'Poppins',   sans-serif;     /*'Times New Roman', Times, serif */
+}
+
+p{
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+}
+.navbar{
+
+    display:flex;
+    align-items: center;
+    padding:20px;
+    text-align:center;  /* added just this ligne*/
+}
+
+.logo img{
+
+    width:125px;
+}
+
+nav{
+
+    flex: 1;
+    text-align:right;
+}
+
+
+nav ul{
+
+   display:inline-block;
+   list-style-type: none; 
+}
+
+
+nav ul li{
+
+    display:inline-block;
+    margin-right: 20px;
+
+ }
+
+
+ nav ul li a{
+
+ text-decoration: none;
+ color: #555;
+
+ }
+
+ .container{
+
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left:25px;
+    padding-right:25px;
+ }
+
+
+ .container:hover{
+background:radial-gradient(cyan,blue,white);
+   
+ }
+
+ .row{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+     
+ }
+
+
+ .container .row a{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+ }
+
+/*added by me*/
+ .categories .container .row img{
+    margin: 20px auto;
+    padding-left:25px;
+    padding-right:25px;
+   /* height:6500px;*/ 
+    width:550px;  
+    flex-basis:25px;
+    min-width: 220px;
+    padding: 16px;
+    transition:transform 0.4s; 
+    background:#e7e6e6;
+    border-radius:2px ;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ .col-2{
+
+    flex-basis: 50%;
+    min-width: 300px;
+ }
+
+
+ .col-2 img{
+
+    width:90%;
+    padding:30px 0;
+    margin-left:12%;
+    margin-top:-12%;
+ }
+
+ .col-2 h1{
+
+  font-size: 50px;
+  line-height: 60px;
+  margin:20px 0;
+  margin-bottom:30px;
+ }
+
+ .col-2 a{
+
+   text-decoration: none;
+   padding: 8px 30px;
+   background:;  /*#3552f1*/
+   color: white;
+   border-radius: 26px;
+   display: inline-block;
+   margin-top: 1%;
+   transition: background 0.5s;
+   background:radial-gradient(white,cyan);
+   }
+ .header-section{
+     background:radial-gradient(white,cyan);
+     /* margin-top: -20px; */
+ }
+
+
+ .col-2 a:hover{
+    text-decoration: none;
+    padding: 8px 30px;
+    background:#2c88c5;
+    color: white;
+    border-radius: 26px;
+    display: inline-block;
+    margin-top: 1%;
+     background:radial-gradient(blue,cyan);
+    }
+
+    /* categorie section style */
+
+
+    .categories{
+
+        margin: 70px 0;
+    }
+
+    .col-3{
+
+        flex-basis:30%;
+        min-width:250px;
+        margin: auto;   
+    }
+
+    .row a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .col-3 img{
+        width:20%;
+       
+    }
+
+    .container h2{
+
+        text-align: center;
+        font-size: 1.7rem;
+        color: rgb(34, 7, 7);
+        margin: 40px;
+    }
+
+    /* the best products section */
+
+    .col-4 {
+        flex-basis:25px;
+        min-width: 220px;
+        padding: 16px;
+        transition: transform 0.4s; 
+        background: #e7e6e6;
+        border-radius:2px ;
+        /* border:rgb(97, 92, 92) solid; */
+         /* background: rgb(183, 219, 183);*/
+       
+    }
+    .col-4 img{
+         width: 100%; 
+       
+    }
+
+    .col-4:hover{
+        transform: translateY(-12px); 
+      
+   }
+   .rating .fa{
+       color: yellow;
+   }
+
+
+
+   /*  RESPONSIVE DESIGN */
+
+
+
+   /* tablette or smartphone*/
+
+
+
+@media screen and (max-width: 767px)
+
+{
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+
+   font-family: 'Poppins', sans-serif;     /*'Times New Roman', Times, serif */
+}
+
+p{
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+}
+
+/* add for me to customize*/
+.row p{
+
+    margin: 20px auto;
+    padding-left:10px;
+    padding-right:3px;
+    text-align:center; 
+    align-items: center;
+    justify-content: space-around;
+  
+
+}
+.navbar{
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.logo img{
+
+    width:125px;
+}
+
+nav{
+
+    flex: 1;
+    text-align: right;
+}
+
+
+nav ul{
+
+   display:inline-block;
+   list-style-type: none; 
+}
+
+
+nav ul li{
+
+    display:inline-block;
+    margin-right: 20px;
+
+ }
+ nav ul li a{
+
+ text-decoration: none;
+ color: #555;
+
+ }
+/* customize*/
+ .container{
+
+   /*max-width:1200px;*/
+    width:100%;
+    margin:20px auto;
+    padding-left:3px;
+    padding-right:3px;
+ }
+
+ .container:hover{
+background:radial-gradient(cyan,blue,white);
+   
+ }
+
+ .row{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+     
+ }
+
+
+ .container .row a{
+
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+ }
+
+ /*added by me     for the fees' images*/
+ .categories .container .row img{
+    margin:20px auto;
+    padding-left:25px;
+    padding-right:25px;
+   /* height:6500px;*/ 
+    width:100%;  
+    flex-basis:25px;
+    min-width:220px;
+    padding:16px;
+    transition:transform 0.4s; 
+    background:#e7e6e6;
+    border-radius:2px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .col-2{
+
+    flex-basis:50%;
+    min-width:300px;
+ }
+
+/*added by me*/
+ .col-2 img{
+
+    width:100%;
+    padding:30px 0;
+    margin: 20px auto;
+    padding-left:25px;
+    padding-right:25px;
+    margin-top:1%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+ }
+
+ .col-2 h1{
+
+  font-size: 50px;
+  line-height: 60px;
+  margin:20px 0;
+  margin-bottom:30px;
+ }
+
+
+/*added by me, the part where there's  explorez maintenant*/
+ .col-2 a{
+
+   text-decoration: none;
+   padding: 8px 30px;
+   background:; /*#3552f1*/
+   color: white;
+   border-radius:26px;
+   display: inline-block;
+  /* margin-right:6%;*/
+   transition: background 0.5s;
+   background:radial-gradient(white,cyan);
+   }
+ .header-section{
+     background:radial-gradient(white,cyan,black);
+     /* margin-top: -20px; */
+ }
+
+
+ .col-2 a:hover{
+    text-decoration: none;
+    padding: 8px 30px;
+    background:#2c88c5;
+    color: white;
+    border-radius: 26px;
+    display: inline-block;
+    margin-top: 1%;
+     background:radial-gradient(blue,cyan);
+    }
+
+    /* categorie section style */
+
+
+    .categories{
+
+        margin: 70px 0;
+    }
+
+    .col-3{
+
+        flex-basis: 30%;
+        min-width:250px;
+        margin: auto;
+      
+      
+    }
+
+    .row a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .col-3 img{
+        width:20%;
+       
+    }
+
+    .container h2{
+
+        text-align: center;
+        font-size: 1.7rem;
+        color: rgb(34, 7, 7);
+        margin: 40px;
+    }
+
+    /* the best products section */
+
+    .col-4 {
+        flex-basis:25px;
+        min-width: 220px;
+        padding: 16px;
+        transition: transform 0.4s; 
+        background: #e7e6e6;
+        border-radius:2px ;
+        /* border:rgb(97, 92, 92) solid; */
+         /* background: rgb(183, 219, 183);*/
+       
+    }
+    .col-4 img{
+         width: 100%; 
+       
+    }
+
+    .col-4:hover{
+        transform: translateY(-12px); 
+      
+   }
+   .rating .fa{
+       color: yellow;
+   }
+
+
+}
+
+
+
+
+
+
+
+
